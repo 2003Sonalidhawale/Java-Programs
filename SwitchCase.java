@@ -77,7 +77,7 @@ class SwitchCase
                         total=total+(temp*temp*temp);
                         number1/=10;
                     }
-                    System.out.println(number);
+                    System.out.println(number1);
                     if (total==arm) {
                         System.out.println(arm+" is an armstrong number ");
                       }  else{
