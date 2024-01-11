@@ -70,7 +70,7 @@ class SwitchCase
                     /*4:Accept no from user and check it is armstrong or not */
                     System.out.println("Enter a number :");
                     int arm=sc.nextInt();
-                    int number1, temp,total;
+                    int number1, temp,total=0;
                     number1=arm;
                     while (number1!=0) {
                         temp=number1%10;
