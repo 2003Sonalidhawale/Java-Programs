@@ -70,15 +70,15 @@ class SwitchCase
                     /*4:Accept no from user and check it is armstrong or not */
                     System.out.println("Enter a number :");
                     int arm=sc.nextInt();
-                    int originalnumber , remainder,result=0, number=0;
-                    originalnumber=arm;
-                    while (arm>0) {
-                        remainder=arm%10;
-                        number=number+(arm*arm*arm);
-                        arm=arm/10;
+                    int number1, temp,total;
+                    number1=arm;
+                    while (number1!=0) {
+                        temp=number1%10;
+                        total=total+(temp*temp*temp);
+                        number1/=10;
                     }
                     System.out.println(number);
-                    if (result == arm) {
+                    if (total==arm) {
                         System.out.println(arm+" is an armstrong number ");
                       }  else{
                         System.out.println(arm+" is not an armstrong number ");
